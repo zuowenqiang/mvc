@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <!-- 欢迎界面 -->	
+  <welcome-file-list>
+    <welcome-file>view/index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+    <servlet-name>main</servlet-name>
+    <servlet-class>com.web.controller.MainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>main</servlet-name>
+   <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <filter>
+  	<filter-name>filter</filter-name>
+  	<filter-class>com.web.fifter.loginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>filter</filter-name>
+  	<url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  
+  <!--
+  servlet配置  
+  <servlet>
+     <servlet-name>test</servlet-name>
+     <servlet-class>com.web.controller.TestServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>test</servlet-name>
+     <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+     <servlet-name>bb</servlet-name>
+     <servlet-class>com.web.controller.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>bb</servlet-name>
+     <url-pattern>/bb</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>reg</servlet-name>
+     <servlet-class>com.web.controller.RegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>reg</servlet-name>
+     <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>showUser</servlet-name>
+     <servlet-class>com.web.controller.showUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>showUser</servlet-name>
+     <url-pattern>/showUser</url-pattern>
+  </servlet-mapping>
+  
+  <listener>
+      <listener-class>com.web.controller.ContextListener</listener-class>
+  </listener>
+ <servlet>
+     <servlet-name>delete</servlet-name>
+     <servlet-class>com.web.controller.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>delete</servlet-name>
+     <url-pattern>/delete</url-pattern>
+  </servlet-mapping> 
+ 
+ <servlet>
+     <servlet-name>look</servlet-name>
+     <servlet-class>com.web.controller.look</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>look</servlet-name>
+     <url-pattern>/look</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+     <servlet-name>student</servlet-name>
+     <servlet-class>com.web.controller.studentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>student</servlet-name>
+     <url-pattern>/student</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+     <servlet-name>class</servlet-name>
+     <servlet-class>com.zuo.stuinfo.classServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>class</servlet-name>
+     <url-pattern>/class</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+     <servlet-name>students</servlet-name>
+     <servlet-class>com.web.controller.Student</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>students</servlet-name>
+     <url-pattern>/students</url-pattern>
+  </servlet-mapping> 
+   <servlet>
+     <servlet-name>classt</servlet-name>
+     <servlet-class>com.web.controller.Class</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>classt</servlet-name>
+     <url-pattern>/classt</url-pattern>
+  </servlet-mapping> -->
+</web-app>
+
+
